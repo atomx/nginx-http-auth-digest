@@ -115,7 +115,15 @@ auth_digest_user_file
   of a username, realm, and md5 hash combining name, realm, and password. For example:
   ``joi:enfield:ef25e85b34208c246cfd09ab76b01db7``
   This file needs to be readable by your nginx user!
-  
+
+auth_digest_allow_localhost
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:Syntax: ``auth_digest_allow_localhost`` *on | off*
+:Default: *off*
+:Context: server, location
+:Description:
+  when enabled allows localhost traffic through unchallenged.
+
 auth_digest_timeout
 ~~~~~~~~~~~~~~~~~~~
 :Syntax: ``auth_digest_timeout`` *delay-time*
